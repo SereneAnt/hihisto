@@ -51,10 +51,10 @@ public class Histogram {
         int[] tmp3 = new int[HISTO_BINS];
 
         for (int i = 0; i < SIZE; ) {
-            tmp0[(int) data[i++] * HISTO_BINS]++;
-            tmp1[(int) data[i++] * HISTO_BINS]++;
-            tmp2[(int) data[i++] * HISTO_BINS]++;
-            tmp3[(int) data[i++] * HISTO_BINS]++;
+            tmp0[(int) (data[i++] * HISTO_BINS)]++;
+            tmp1[(int) (data[i++] * HISTO_BINS)]++;
+            tmp2[(int) (data[i++] * HISTO_BINS)]++;
+            tmp3[(int) (data[i++] * HISTO_BINS)]++;
         }
 
         int[] histo = new int[HISTO_BINS];
